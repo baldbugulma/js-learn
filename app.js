@@ -1,15 +1,11 @@
-// Операторы присваивания
+// Порядок операторов, у каждого оператора есть свой прриоритет. Тем выше число, тем выше приоритет
 
-let age = 18+5;
+const isSuited = 100 - 10 > 90 - 5;
+console.log(isSuited);
 
-age+=2; // age = age+2
-age++; //age=age+1
-console.log(age);
 
-//Операторы сравнения
+//групировка
 
-const vasya = 20;
-console.log(age > vasya)
-console.log(age >= vasya)
-console.log(age <= vasya)
-console.log(age == vasya)
+const a = (6 + 10)/2;
+
+console.log(a);
