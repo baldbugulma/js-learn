@@ -1,6 +1,12 @@
-// Типы данных
+// Упражнение
 
-// Любая обычная переменная - примитивная
+const priceOneHours = 80;
+const workHoursDay = 5;
+const workDay = 5;
 
-const big = 999999999222222222222222222222111111111111; //работа с большими числами;
-console.log(typeof big);
+const orderHours = 40;
+const liveOut = 11;
+
+console.log('Возьмусь я за работу?' + ' ' + (orderHours/5+2 < 11));
+console.log('Сколько я заработаю?' + ' ' + (priceOneHours * orderHours) + '$');
+
