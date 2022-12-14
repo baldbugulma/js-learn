@@ -1,15 +1,14 @@
-//Шаблоные строки
+//Преобразование типов
 
-const projectName = 'cайт магазина';
-const price = 2000;
-const author = 'Василий Пупкин';
+const age = '18';
 
-const template = author + ' заказал ' + projectName + ' по цене '+ price;
+console.log(Number(age) + 5);
+console.log(age - 3); // умножение деление вычетание. Делается корректно
+const userName = 'Вася';
+console.log(userName - 5);
+console.log(String(4) + 7);
+console.log(Boolean(123));
 
-console.log(template)
 
-const template2 = `${author}
-заказал ${projectName} по цене ${price}$`;
-
-console.log(template2)
-
+const a = 2 + '10';
+console.log(a - 10); // = 200
