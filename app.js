@@ -1,14 +1,16 @@
-//Преобразование типов
+//Условные операторы
 
-const age = '18';
-
-console.log(Number(age) + 5);
-console.log(age - 3); // умножение деление вычетание. Делается корректно
-const userName = 'Вася';
-console.log(userName - 5);
-console.log(String(4) + 7);
-console.log(Boolean(123));
+const money = 1;
+const canBay = money > 50;
 
 
-const a = 2 + '10';
-console.log(a - 10); // = 200
+
+if(canBay){
+    console.log('Может купить')
+} else if (money > 5){
+    console.log('Купи мини')
+} else {
+    console.log('Не может купить')
+}
+
+
