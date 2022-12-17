@@ -1,44 +1,25 @@
+// Тернарные операторы
 
-// Васи положил 12 000$ на вклад 7% годовых с капитализацией 1 раз в месяц. Вывести в консоль, сможет ли он купить дом за 13 500$ через 2 года после снятия вклада. И остаток после покупки.
-// Итог = Сумма * (1 + Ставка в месяц не в %) ^ срок в месяцах
+const bmmX3Price = 100000;
+const fordFocusPrice = 10000;
+const budget = 200000;
 
-const role = 'CEO';
-
-switch(role){
-    case 'manager':
-        console.log('Менеджер');
-        break;
-    case 'admin':
-        console.log('Админ');
-        break;
-    case 'CEO':
-        console.log('CEО');
-        break;
-    default:
-        console.log('Мы тебя не знаем'); 
+let message;
+if(budget > 100000) {
+    message = 'bmw';
+} else if (budget > fordFocusPrice)  {
+    message = 'Ford';
+} else {
+    message = 'Велосипед';
 }
 
-switch(role){
-    case 'manager':
-    case 'admin':
-        console.log('Не руководитель');
-        break;
-    case 'CEO':
-        console.log('CEО');
-        break;
-    default:
-        console.log('Мы тебя не знаем'); 
-}
+console.log(`Я хочу купить ${message}`);
 
-const num = 1;
 
-switch(true){
-    case num>0: // true === num > 0
-        console.log ("Положительный")
-        break;
-    case num<0:
-        console.log ("Отрицательный")
-        break;
-    default:
-        console.log ("Ноль")
-}
+const str = 10 > 0 ? 'Больше 0' : 'Не больше';
+
+console.log(str);
+
+
+message = budget > bmmX3Price ? 'bmw X3' : budget > fordFocusPrice ? 'Ford' : 'Велосипед'; 
+console.log(`Я хочу купить ${message}`);
