@@ -1,12 +1,14 @@
 // Логические операторы
 
-const isAdmin = true;
-const canWrite = true;
+let balance = 10;
+let bonusBalance = 110;
+let isBaned = true;
+let isExist = false;
+let isSelling = true;
 
-console.log(`Системный файл ${isAdmin && canWrite}`);
-console.log(`Обычный файл ${isAdmin || canWrite}`);
-console.log(`Инвертировать права админа ${!isAdmin}`);
-
-const isEdit = true;
-
-console.log(`Файл с редактированием ${isAdmin && canWrite && !isEdit}`);
+if ((balance > 1000 || bonusBalance > 100) && (isBaned == false && isExist == false && isSelling == true)) 
+{
+    console.log('Можешь купить игру')
+} else {
+    console.log('Не можешь купить игру')
+}
