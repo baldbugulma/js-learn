@@ -1,15 +1,12 @@
-// Упражнение - Проверка робота
+// Логические операторы
 
-let test = prompt("Сколько буде 7+ или -15?");
+const isAdmin = true;
+const canWrite = true;
 
-switch(test.toLowerCase()){
-    case '23':
-    case '-8':
-    case 'я не робот':
-        console.log("Вы не робот");
-        break;
-    default:
-        console.log("Вы робот");
-}
+console.log(`Системный файл ${isAdmin && canWrite}`);
+console.log(`Обычный файл ${isAdmin || canWrite}`);
+console.log(`Инвертировать права админа ${!isAdmin}`);
 
+const isEdit = true;
 
+console.log(`Файл с редактированием ${isAdmin && canWrite && !isEdit}`);
