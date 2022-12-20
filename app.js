@@ -1,14 +1,16 @@
-// Логические операторы
+// Функции
 
-let balance = 10;
-let bonusBalance = 110;
-let isBaned = true;
-let isExist = false;
-let isSelling = true;
 
-if ((balance > 1000 || bonusBalance > 100) && (isBaned == false && isExist == false && isSelling == true)) 
-{
-    console.log('Можешь купить игру')
-} else {
-    console.log('Не можешь купить игру')
+function logName(name, surname){
+    console.log(`Мое имя ${name} ${surname}`);
 }
+
+logName('Костя', 'Лох');
+
+function countDepositSum(depositInUSD, month, rate){
+    const sum = depositInUSD * (1 + rate / 12) ** month;
+    return sum;
+}
+
+const example1 = countDepositSum(1000, 24, 0.12);
+console.log(example1)
